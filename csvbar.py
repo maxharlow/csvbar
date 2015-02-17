@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # coding: utf-8
 
 # csvbar -- draw bar graphs from CSV files in the terminal

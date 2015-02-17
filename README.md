@@ -3,7 +3,13 @@ CSV Bar
 
 Draw bar charts from CSV files in the terminal.
 
-Requires either version 2 or 3 of [Python] (https://www.python.org/).
+Requires either version 2 or 3 of [Python] (https://www.python.org/), including `pip`.
+
+
+Installing
+----------
+
+Install with Pip: `pip install csvbar`.
 
 
 Usage
@@ -26,7 +32,7 @@ Trade Union,42328877.05
 You can then:
 
 ```bash
-$ ./csvbar.py data.csv
+$ csvbar data.csv
 
 Friendly Society               ▌ 49,428.84
 Limited Liability Partnership  ▌ 96,122.93
