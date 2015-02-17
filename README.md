@@ -39,6 +39,8 @@ Trade Union                    ████████████████�
 
 ```
 
+It also accepts data on STDIN, useful if you're using something like [CSV Kit] (https://github.com/onyxfish/csvkit).
+
 
 Inspiration
 -----------
