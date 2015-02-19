@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='csvbar',
-    version='1.2',
+    version='1.3',
     description='Draw bar graphs from CSV files in the terminal.',
     long_description=open('README.md').read(),
     author='Max Harlow',
