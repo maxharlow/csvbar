@@ -7,6 +7,7 @@ import argparse
 import locale
 import csv
 import sys
+import os
 
 locale.setlocale(locale.LC_ALL, '')
 
@@ -24,6 +25,7 @@ def arguments():
 def read(filename):
     labels = []
     data = []
+    if not os.path.isfile(filename): sys.exit(filename + ': no such file')
     file = sys.stdin if filename == '-' else open(filename, 'rb')
     reader = csv.reader(file)
     headers = next(reader) # skip these
