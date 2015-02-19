@@ -34,18 +34,19 @@ You can then:
 ```bash
 $ csvbar data.csv
 
-Friendly Society               ▌ 49,428.84
-Limited Liability Partnership  ▌ 96,122.93
-Other                          ▌ 233,016.58
-Registered Political Party     ▌ 333,058.01
-Unincorporated Association     ███ 2,656,919.98
-Company                        ███ 3,266,514.88
-Individual                     ████████████ 10,191,197.00
-Trade Union                    ██████████████████████████████████████████████████ 42,328,877.05
+Trust                          ▌ 93,167.74 (0.15%)
+Limited Liability Partnership  ▌ 100,522.93 (0.16%)
+Friendly Society               ▌ 111,428.84 (0.18%)
+Registered Political Party     ▌ 382,227.01 (0.61%)
+Unincorporated Association     ███ 2,846,016.31 (4.54%)
+Company                        ████ 3,696,180.22 (5.89%)
+Individual                     ████████████ 11,021,726.04 (17.57%)
+Trade Union                    ██████████████████████████████████████████████████ 44,483,505.54 (70.91%)
 
+Total: 62,734,774.63
 ```
 
-It also accepts data on STDIN, useful if you're using something like [CSV Kit] (https://github.com/onyxfish/csvkit).
+It also accepts data on STDIN, useful if you're using something like [CSV Kit] (https://github.com/onyxfish/csvkit) or [Q] (https://github.com/harelba/q).
 
 
 Inspiration
