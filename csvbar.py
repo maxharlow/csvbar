@@ -47,6 +47,7 @@ def display(labels, data, width):
         number = locale.format('%.2f', count, grouping=True)
         print(label + padding + bar + ' ' + number)
     print('')
+    print('Total: ' + locale.format('%.2f', sum(data), grouping=True))
 
 if __name__ == '__main__':
     main()
