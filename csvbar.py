@@ -29,7 +29,8 @@ def read(filename):
     headers = next(reader) # skip these
     for line in reader:
         labels.append(line[0])
-        data.append(float(line[1]))
+        try: data.append(float(line[1]))
+        except ValueError: sys.exit(line[1] + ' is not a number')
     file.close()
     return labels, data
 
