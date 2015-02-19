@@ -39,6 +39,7 @@ def read(filename):
 def display(labels, data, width):
     full_tick = '█'
     half_tick = '▌'
+    total = sum(data)
     step = max(data) / width
     spacing = max(len(label) for label in labels)
     print('')
@@ -48,9 +49,10 @@ def display(labels, data, width):
         padding = ' ' * (spacing - len(label) + 2)
         bar = half_tick if count < step else int(count / step) * full_tick
         number = locale.format('%.2f', count, grouping=True)
-        print(label + padding + bar + ' ' + number)
+        percentage = locale.format('%.2f', count / total * 100, grouping=True)
+        print(label + padding + bar + ' ' + number + ' (' + percentage + '%)')
     print('')
-    print('Total: ' + locale.format('%.2f', sum(data), grouping=True))
+    print('Total: ' + locale.format('%.2f', total, grouping=True))
 
 if __name__ == '__main__':
     main()
