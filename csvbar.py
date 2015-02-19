@@ -25,7 +25,7 @@ def arguments():
 def read(filename):
     labels = []
     data = []
-    if not os.path.isfile(filename): sys.exit(filename + ': no such file')
+    if not os.path.isfile(filename) and filename != '-': sys.exit(filename + ': no such file')
     file = sys.stdin if filename == '-' else open(filename, 'rb')
     reader = csv.reader(file)
     headers = next(reader) # skip these
