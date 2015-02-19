@@ -17,16 +17,16 @@ Usage
 
 Say you have a CSV file such as:
 
-```csv
+```
 Donor,Value
-Friendly Society,49428.84
-Limited Liability Partnership,96122.93
-Other,233016.58
-Registered Political Party,333058.01
-Unincorporated Association,2656919.98
-Company,3266514.88
-Individual,10191197.0
-Trade Union,42328877.05
+Trust,93167.74
+Limited Liability Partnership,100522.93
+Friendly Society,111428.84
+Registered Political Party,382227.01
+Unincorporated Association,2846016.31
+Company,3696180.22
+Individual,11021726.04
+Trade Union,44483505.54
 ```
 
 You can then:
