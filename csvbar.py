@@ -24,7 +24,7 @@ def arguments():
 def read(filename):
     labels = []
     data = []
-    file = sys.stdin if filename == '-' else open(filename, 'r')
+    file = sys.stdin if filename == '-' else open(filename, 'rb')
     reader = csv.reader(file)
     headers = next(reader) # skip these
     for line in reader:
