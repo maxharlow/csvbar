@@ -4,6 +4,7 @@ import argparse
 import locale
 import csv
 import sys
+import io
 import os
 
 def main():
@@ -28,7 +29,7 @@ def read(filename):
     labels = []
     data = []
     if not os.path.isfile(filename) and filename != '-': raise Exception(filename + ': no such file')
-    file = sys.stdin if filename == '-' else open(filename, 'rb')
+    file = sys.stdin if filename == '-' else io.open(filename, 'r')
     reader = csv.reader(file)
     headers = next(reader) # skip these
     for line in reader:
