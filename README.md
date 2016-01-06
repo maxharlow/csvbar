@@ -3,13 +3,13 @@ CSV Bar
 
 Draw bar charts from CSV files in the terminal.
 
-Requires either version 2 or 3 of [Python] (https://www.python.org/), including `pip`.
+Tested on Python 2.7 and 3.5.
 
 
 Installing
 ----------
 
-Install with Pip: `pip install csvbar`.
+    pip install csvbar
 
 
 Usage
