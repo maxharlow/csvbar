@@ -3,6 +3,8 @@ CSV Bar
 
 Draw bar charts from CSV files in the terminal.
 
+Part of a set of terminal-based CSV tools, also including [CSV Match] (https://github.com/maxharlow/csvmatch) and [CSV Pivot] (https://github.com/maxharlow/csvpivot).
+
 Tested on Python 2.7 and 3.5.
 
 
